@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="ToolBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/green_theme</item>
+        <item name="colorPrimaryDark">@color/green_theme_dark</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+
+    <style name="MaterialSearch" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+
+    </style>
+</resources>
