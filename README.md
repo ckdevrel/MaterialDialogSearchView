@@ -16,19 +16,19 @@ http://stackoverflow.com/questions/30521615/implementing-google-play-and-maps-li
 
 Regarding the usage, it is simple to go without using any third party libraries. The class files used in this repo is limited to
 
-> **MainActivity.java**  
+#### **MainActivity.java**  
 
 This is the main class and it comprises of Custom dilaog and then several logics to filter out the users suggestion in EditText.
 
-> **SearchAdapter.java** 
+#### **SearchAdapter.java** 
 
 It is nothing but a adapter class extends BaseAdapter which in turn used to display the list items (i.e Country's Text and icon used in this repo) in a ListView.
 
-> **Uils.java**          
+#### **Uils.java**          
 
 It is an Utility class which is used to adjust the height of ListView based on the count of child items.
 
-> **SharedPreference.java**   
+#### **SharedPreference.java**   
 
 SharedPrefernce class is used to store and retrieve recently searched values (i.e selected or clicked values from the suggestions list.)
 
