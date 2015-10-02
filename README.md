@@ -1,7 +1,7 @@
 # MaterialDialogSearchView
 
 MaterialDialogSearchView is a custom implementation and replacement for a Toolbar SearchView in a material design.
-It is an alternate approach using Material dialogs as SearchView similar to the applications seen on nowadays with this type of SearchView's
+It is an alternate approach using Material dialogs as SearchView similar to the applications seen on nowadays with this type of SearchView's in the apps
 like Google play, Google card's,etc.
 
 #### **What made me to do this repo?**
@@ -32,6 +32,6 @@ It is an Utility class which is used to adjust the height of ListView based on t
 
 SharedPrefernce class is used to store and retrieve recently searched values (i.e selected or clicked values from the suggestions list.)
 
-
+> **Note:** This is completely a custom implementation of mine.  Though this solution may be simple, but very effective implementing MaterialSearchView's. You can do whatever with this code without any licenses. Happy coding! 
 
 
