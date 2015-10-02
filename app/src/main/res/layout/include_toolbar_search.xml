@@ -12,32 +12,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
 
         <ImageView
             android:id="@+id/img_tool_back"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
             android:src="@drawable/ic_arrow_left_grey600_24dp"/>
 
         <EditText
             android:id="@+id/edt_tool_search"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="7"
+            android:layout_weight="1"
             android:background="@null"
             android:hint="Choose your city"
             android:textColorHint="@color/secondary_text"
             android:textColor="@color/secondary_text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
             android:textSize="16sp"/>
 
         <ImageView
-            android:id="@+id/img_tool_close"
-            android:layout_width="0dp"
+            android:id="@+id/img_tool_mic"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
-            android:src="@drawable/ic_close_grey600_24dp"/>
+            android:src="@drawable/ic_microphone_grey600_24dp"/>
     </LinearLayout>
 
 

@@ -16,6 +16,5 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.7</item>
-
     </style>
 </resources>
