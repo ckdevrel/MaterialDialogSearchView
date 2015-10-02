@@ -1,6 +1,6 @@
 # MaterialDialogSearchView
 
-MaterialDialogSearchView is a custom implementation and replacement for a Toolbar SearchView in a material design.
+MaterialDialogSearchView is a custom implementation of a Toolbar SearchView in a material design.
 It is an alternate approach using Material dialogs as SearchView similar to the applications seen on nowadays with this type of SearchView's in the apps
 like Google play, Google card's,etc.
 
