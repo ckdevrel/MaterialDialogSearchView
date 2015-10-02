@@ -32,6 +32,6 @@ It is an Utility class which is used to adjust the height of ListView based on t
 
 SharedPrefernce class is used to store and retrieve recently searched values (i.e selected or clicked values from the suggestions list.)
 
-> **Note:** This is completely a custom implementation of mine.  Though this solution may be simple, but very effective implementing MaterialSearchView's. You can do whatever with this code without any licenses. Happy coding! 
+> **Note:** This is completely a custom implementation of mine.  Though this solution may be simple, but very effective implementing MaterialSearchView's and it will not affect any part of the coding cycle. You can use this view in activity, fragment or wherever you want. Happy coding! 
 
 
