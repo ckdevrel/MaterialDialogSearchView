@@ -9,7 +9,7 @@ like Google play, Google card's,etc.
 This repo is truely made on the inspiration of Google play's SearchView and StackOverflow question of mine
 http://stackoverflow.com/questions/30521615/implementing-google-play-and-maps-like-search-bar-android
 
-[Imgur](http://i.imgur.com/kUwTS5P.gifv)
+<a href="http://imgur.com/kUwTS5P"><img src="http://i.imgur.com/kUwTS5P.gif" title="source: imgur.com" /></a>
 
 
 #### **How to use?**
