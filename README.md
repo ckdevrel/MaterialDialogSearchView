@@ -18,13 +18,13 @@ Regarding the usage, it is simple to go without using any third party libraries.
 
 #### **MainActivity.java**  
 
-This is the main class and it comprises of Custom dilaog and then several logics to filter out the users suggestion in EditText.
+This is the main class and it comprises of Custom dialog and then several logics to filter out the users suggestion in EditText.
 
 #### **SearchAdapter.java** 
 
 It is nothing but a adapter class extends BaseAdapter which in turn used to display the list items (i.e Country's Text and icon used in this repo) in a ListView.
 
-#### **Uils.java**          
+#### **Utils.java**          
 
 It is an Utility class which is used to adjust the height of ListView based on the count of child items.
 
@@ -32,6 +32,11 @@ It is an Utility class which is used to adjust the height of ListView based on t
 
 SharedPrefernce class is used to store and retrieve recently searched values (i.e selected or clicked values from the suggestions list.)
 
-> **Note:** This is completely a custom implementation of mine.  Though this solution may be simple, but very effective implementing MaterialSearchView's and it will not affect any part of the coding cycle. You can use this view in activity, fragment or wherever you want. Happy coding! 
+> **Note:** 
 
+        1. This is completely a custom implementation of mine.  Though this solution may be simple, but very effective implementing MaterialSearchView's and it will not affect any part of the coding cycle. You can use this view in activity, fragment or wherever you want. Happy coding! 
+        2. Voice search will not work. It is just displayed for the UI purpose. EditText data will be cleared once if you click mic icon.
 
+#### **Licensing**
+
+About licensing it is free to go. You can do whatever you want with this code. I really appreciate all of your feedbacks and pull requests to improve this repo.
