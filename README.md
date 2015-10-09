@@ -1,3 +1,6 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MaterialDialogSearchView-green.svg?style=flat)](https://android-arsenal.com/details/1/2589)
+
+
 # MaterialDialogSearchView
 
 MaterialDialogSearchView is a custom implementation of a Toolbar SearchView in a material design.
