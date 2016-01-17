@@ -11,6 +11,9 @@ import java.util.List;
 
 public class SharedPreference {
 
+    // Avoid magic numbers.
+    private static final int MAX_SIZE = 3;
+
 
     public SharedPreference() {
         super();
@@ -26,31 +29,31 @@ public class SharedPreference {
         Gson gson = new Gson();
         String jsonFavorites = gson.toJson(countries);
         editor.putString(key, jsonFavorites);
-        editor.commit();
+        editor.apply();
     }
 
-    public static ArrayList loadList(Context context,String pref_name, String key) {
+    public static ArrayList<String> loadList(Context context,String pref_name, String key) {
 
         SharedPreferences settings;
-        List favorites;
+        List<String> favorites;
         settings = context.getSharedPreferences(pref_name, Context.MODE_PRIVATE);
         if (settings.contains(key)) {
             String jsonFavorites = settings.getString(key, null);
             Gson gson = new Gson();
             String[] favoriteItems = gson.fromJson(jsonFavorites, String[].class);
             favorites = Arrays.asList(favoriteItems);
-            favorites = new ArrayList(favorites);
+            favorites = new ArrayList<>(favorites);
         } else
             return null;
-        return (ArrayList) favorites;
+        return (ArrayList<String>) favorites;
     }
 
     public static void addList(Context context, String pref_name, String key,String country) {
-        List favorites = loadList(context, pref_name, key);
+        List<String> favorites = loadList(context, pref_name, key);
         if (favorites == null)
-            favorites = new ArrayList();
+            favorites = new ArrayList<>();
 
-        if(favorites.size()>3) {
+        if(favorites.size() > MAX_SIZE) {
             favorites.clear();
             deleteList(context, pref_name);
         }
@@ -81,9 +84,6 @@ public class SharedPreference {
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = myPrefs.edit();
         editor.clear();
-        editor.commit();
-
-
-
+        editor.apply();
     }
 }

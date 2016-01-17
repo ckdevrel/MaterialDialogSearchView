@@ -2,6 +2,7 @@ package com.takeoffandroid.materialdialogsearchview;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,12 +54,12 @@ public class SearchAdapter extends BaseAdapter {
 
             holder = new ViewHolder();
 
-            mLayoutInflater = (LayoutInflater)mContext.getSystemService(mContext.LAYOUT_INFLATER_SERVICE);
+            mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             v = mLayoutInflater.inflate(R.layout.list_item_search, parent, false);
             holder.txtCountry = (TextView)v.findViewById(R.id.txt_country);
             v.setTag(holder);
-        }else{
+        } else{
 
             holder = (ViewHolder) v.getTag();
         }
@@ -67,14 +68,13 @@ public class SearchAdapter extends BaseAdapter {
 
         Drawable searchDrawable,recentDrawable;
 
-        if(android.os.Build.VERSION.SDK_INT >= 21){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             searchDrawable = mContext.getResources().getDrawable(R.drawable.ic_magnify_grey600_24dp, null);
             recentDrawable = mContext.getResources().getDrawable(R.drawable.ic_backup_restore_grey600_24dp, null);
 
         } else {
             searchDrawable = mContext.getResources().getDrawable(R.drawable.ic_magnify_grey600_24dp);
             recentDrawable = mContext.getResources().getDrawable(R.drawable.ic_backup_restore_grey600_24dp);
-
         }
         if(mIsFilterList) {
             holder.txtCountry.setCompoundDrawablesWithIntrinsicBounds(searchDrawable, null, null, null);
@@ -88,7 +88,6 @@ public class SearchAdapter extends BaseAdapter {
 }
 
 class ViewHolder{
-
      TextView txtCountry;
 }
 
